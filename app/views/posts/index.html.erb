@@ -1,4 +1,4 @@
 <h1>投稿一覧</h1>
   <%= @posts.each do |post| %>
-    <p><%= post.title %> : <%= post.content %></p>
+    <p> 投稿者 <%= post.user.nickname if post.user.nickname.present? %> <%= post.title %> : <%= post.content %></p>
   <% end %>
