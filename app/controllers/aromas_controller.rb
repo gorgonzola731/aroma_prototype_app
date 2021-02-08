@@ -1,3 +1,5 @@
 class AromasController < ApplicationController
-  def home
+  def index
+    @aromas = Aroma.all
+  end
 end
