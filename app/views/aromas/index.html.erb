@@ -1,5 +1,9 @@
 <h1>アロマ図鑑</h1>
   <%= @aromas.each do |aroma| %>
-    <p> 名前  <%= aroma.aroma_name %> : <%= aroma.explain %>
+    <p> 名前  <%= aroma.aroma_name %> : <%= aroma.explain %>  
+    <% if aroma.img? %>
+    <%= image_tag aroma.img.url %> 
+    <% end %>
     </p>
+ 
   <% end %>
