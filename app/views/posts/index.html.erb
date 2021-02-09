@@ -1,6 +1,9 @@
 <h1>投稿一覧</h1>
   <%= @posts.each do |post| %>
     <p> 投稿者 <%= post.user.nickname if post.user.nickname.present? %> <%= post.title %> : <%= post.content %>
+    <% if post.image? %>
+      <p><%= image_tag post.image.url %></p>
+    <% end %>
     <%= link_to "削除する", post_path(post.id), method: :delete, data: {confirm: "削除しますか?" } %>
     <%= link_to "編集", edit_post_path(post.id) %>
     </p>
