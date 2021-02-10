@@ -31,6 +31,7 @@ gem 'devise'
 gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
 gem 'carrierwave', '~> 2.0'
+gem 'activeadmin'
 
 
 group :development, :test do
