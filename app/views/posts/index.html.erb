@@ -1,6 +1,6 @@
 <h1>投稿一覧</h1>
   <%= @posts.each do |post| %>
-    <p> 投稿者 <%= post.user.nickname if post.user.nickname.present? %> <%= post.title %> : <%= post.content %>
+    <p> <%= post.user.nickname.present? ? "投稿者 #{post.user.nickname}" : "会員No.#{post.user.id}" %> <%= post.title %> : <%= post.content %>
     <% if post.image? %>
       <p><%= image_tag post.image.url %></p>
     <% end %>
