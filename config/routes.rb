@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   get 'users/show'
   devise_for :users
   root 'home#index'
-  resources :posts
+  
+  resources :posts do
+    resources :likes, only: [:create, :destroy]
+  end
+
   resource :users, only: :show
   resources :aromas
 end
