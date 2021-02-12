@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+  <span class="navbar-brand">アロマ生活アプリ</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class = "nav navbar-nav">
+  
+    <div class="navbar-nav">
+
+      <%= link_to "投稿一覧へ", posts_path,class: "nav-item nav-link active" %>
+      <%= link_to "アロマ図鑑", aromas_path ,class: "nav-item nav-link active"%>
+      <%= link_to "図鑑登録", new_aroma_path ,class: "nav-item nav-link active"%>
+
+        <% if user_signed_in? %>
+          <%= link_to '投稿画面へ', new_post_path ,class: "nav-item nav-link active"%>
+          <%= link_to 'マイページ', users_path,class: "nav-item nav-link active" %>
+          <%= link_to "アカウント編集", edit_user_registration_path ,class: "nav-item nav-link active"%>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { confirm: "ログアウトしますか？" },class: "nav-item nav-link active" %>
+      <% else %>
+          <%= link_to "ログイン", new_user_session_path,class: "nav-item nav-link active" %>
+          <%= link_to "アカウント登録", new_user_registration_path,class: "nav-item nav-link active" %>
+      <% end %>
+    </div>
+  </div>
+</nav>

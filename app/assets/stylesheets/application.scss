@@ -18,5 +18,14 @@
 .mw-xl {
   max-width: 1200px;
 }
+.base-container {
+  padding-top: 150px;
+}
+
+.top-image { 
+  width: 80%; 
+  text-align:center;  
+  margin:0 auto;
+}
 
 @import "bootstrap/scss/bootstrap";
