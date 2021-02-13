@@ -19,13 +19,23 @@
   max-width: 1200px;
 }
 .base-container {
-  padding-top: 150px;
+  padding: 100px 0px 0px;
+  background-color: #FFFAF0;
 }
 
-.top-image { 
-  width: 80%; 
+.aroma_info.image {
+  size: 100*100;
+}
+
+img.sized { 
+  width: 100%; 
+  height: 600px;
   text-align:center;  
   margin:0 auto;
 }
 
 @import "bootstrap/scss/bootstrap";
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
