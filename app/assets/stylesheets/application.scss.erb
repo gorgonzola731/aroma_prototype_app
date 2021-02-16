@@ -16,8 +16,11 @@
 }
 
 .base-container {
-  background-color: #FFFAF0;
   margin: 0;
+}
+
+.navbar-brand {
+  color: black;
 }
 
 .mw-xl {
@@ -26,16 +29,31 @@
 .base-container {
   padding: 100px 0px 0px;
 }
+main {
+  background-color: #FFFAF0;
+}
+
+.aroma_index h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+.post_index h1 {
+  text-align: center;
+}
 
 #whats-aroma_app {
+  color: white;
+  text-align: center;
+  height: 400px;
   display:block;
-  background-image: url("images/3818569_m.jpg");
+  background-image: url("<%= asset_path('3818569_m.jpg') %>");
   background-size: cover;
 }
 
 #whats-aroma_app h1 {
+  
   font-weight: bold;
-  text-align: center;
+  
   
 }
 
@@ -51,3 +69,4 @@ img.sized {
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 @import "@fortawesome/fontawesome-free/scss/regular";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
