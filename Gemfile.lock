@@ -291,6 +291,7 @@ DEPENDENCIES
   devise-i18n
   haml-rails
   jbuilder (~> 2.7)
+  jquery-rails
   listen (~> 3.3)
   pg (~> 1.1)
   pry-byebug
