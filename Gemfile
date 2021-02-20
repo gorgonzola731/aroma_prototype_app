@@ -33,6 +33,7 @@ gem 'devise-i18n'
 gem 'carrierwave', '~> 2.0'
 gem 'activeadmin'
 gem 'haml-rails'
+gem 'jquery-rails'
 
 
 group :development, :test do

@@ -13,4 +13,4 @@ import "@fortawesome/fontawesome-free/js/all"
 
 
 //= require jquery
-//= require_tree .
+//= require jquery_ujs
