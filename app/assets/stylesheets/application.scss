@@ -15,8 +15,58 @@
   max-width: 960px;
 }
 
+.base-container {
+  margin: 0;
+}
+
+.navbar-brand {
+  color: black;
+}
+
 .mw-xl {
   max-width: 1200px;
 }
+.base-container {
+  padding: 100px 0px 0px;
+}
+main {
+  background-color: #FFFAF0;
+}
+
+.aroma_index h1 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+.post_index h1 {
+  text-align: center;
+}
+
+#whats-aroma_app {
+  color: white;
+  text-align: center;
+  height: 400px;
+  display:block;
+ 
+  background-size: cover;
+}
+
+#whats-aroma_app h1 {
+  
+  font-weight: bold;
+  
+  
+}
+
+img.sized { 
+  width: 100%; 
+  height: 600px;
+  text-align:center;  
+  margin:0 auto;
+}
 
 @import "bootstrap/scss/bootstrap";
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');

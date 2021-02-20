@@ -2,7 +2,7 @@
 <% @posts.each do |post| %>
   <p><%= post.title %> : <%= post.content %></p>
   <% if post.image? %>
-      <p><%= image_tag post.image.url %></p>
+      <p><%= image_tag post.image.url ,:width =>'50%', :height => '250px' %></p>
   <% end %>
   
 <% end %>

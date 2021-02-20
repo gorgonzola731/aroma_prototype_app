@@ -1,11 +1,13 @@
+<div class="post_index">
 <h1>投稿一覧</h1>
   <%= @posts.each do |post| %>
     <p> <%= post.user.nickname.present? ? "投稿者 #{post.user.nickname}" : "会員No.#{post.user.id}" %> <%= post.title %> : <%= post.content %>
     <%= link_to "詳細", post_path(post.id) %> (いいね<%= post.liked_users.count %>件)
     <% if post.image? %>
-      <p><%= image_tag post.image.url %></p>
+      <p><%= image_tag post.image.url,:width =>'50%', :height => '250px' %></p>
     <% end %>
     <%= link_to "削除する", post_path(post.id), method: :delete, data: {confirm: "削除しますか?" } %>
     <%= link_to "編集", edit_post_path(post.id) %>
     </p>
   <% end %>
+  </div>

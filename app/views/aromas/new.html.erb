@@ -1,7 +1,2 @@
 <h1>図鑑投稿画面</h1>
-<%= form_with model: @aroma, local:true do |form| %>
-  <p><%= form.label :aroma_name, "名前" %><%= form.text_field :aroma_name %></p>
-  <p><%= form.label :explain, "解説" %><%= form.text_field :explain %></p>
-  <p><%= form.file_field :image , accept: "image/png,image/jpeg,image/gif" %></p>
-  <%= form.submit '図鑑登録' %>
-<% end %>
+<%= render "form", button_value: "図鑑登録" %>

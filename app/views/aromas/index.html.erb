@@ -1,11 +1,17 @@
+<div class="aroma_index">
 <h1>アロマ図鑑</h1>
-  <%= @aromas.each do |aroma| %>
-    <p> 名前  <%= aroma.aroma_name %> : <%= aroma.explain %>  
-    <% if aroma.image? %>
-    <p><%= image_tag aroma.image.url %></p>
+<div class="aroma_info">
+
+    <%= @aromas.each do |aroma| %>
+      <p> 名前  <%= aroma.aroma_name %></p>  
+      <% if aroma.image? %>
+      <%= image_tag aroma.image.url ,:width =>'50%',:height => '300px' %>
+      <% end %>
+      <p><%= aroma.explain %></p>
+      <%= link_to "削除", aroma_path(aroma), method: :delete, data: {confirm: "削除しますか?"} %>
+      <%= link_to "編集", edit_aroma_path(aroma) %>
     <% end %>
-    <%= link_to "削除", aroma_path(aroma), method: :delete, data: {confirm: "削除しますか?"} %>
-    <%= link_to "編集", edit_aroma_path(aroma) %>
-    </p>
- 
-  <% end %>
+
+  
+  </div>
+</div>
