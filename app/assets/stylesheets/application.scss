@@ -64,6 +64,10 @@ img.sized {
   margin:0 auto;
 }
 
+.result.ResultA , .result.ResultB , .result.ResultC , .result.ResultD{
+  display: none;
+}
+
 @import "bootstrap/scss/bootstrap";
 
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
