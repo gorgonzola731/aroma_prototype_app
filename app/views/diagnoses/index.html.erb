@@ -1,98 +1,153 @@
+<%= stylesheet_link_tag 'diagnoses', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <body>
   <div id="wrapper">
-    <div class="question">
-    <h1 class="title">アロマ診断</h1>
-    <ul class="questions">
-      <li class="textBox">
-      <span class="text">Q1. 日頃の疲れが溜まっている</span>
-      <label class="yes"><input class="typeA typeD" name="q01" type="radio">YES
-      </label>
-      <label class="no"><input class="typeB typeC" name="q01" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q2. 寝付けないことが多い</span>
-      <label class="yes"><input class="typeB typeA" name="q02" type="radio">YES
-      </label>
-      <label class="no"><input class="typeC typeD" name="q02" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q3. 精神的に不安定になることをしばしばだ</span>
-      <label class="yes"><input class="typeC typeD" name="q03" type="radio">YES
-      </label>
-      <label class="no"><input class="typeA typeB" name="q03" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q4. 集中力が持続しづらい</span>
-      <label class="yes"><input class="typeD typeC" name="q04" type="radio">YES
-      </label>
-      <label class="no"><input class="typeA typeB" name="q04" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q5. 運動をする習慣がある</span>
-      <label class="yes"><input class="typeA typeD" name="q05" type="radio">YES
-      </label>
-      <label class="no"><input class="typeB typeC" name="q05" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q6.人よりも香りには敏感だ </span>
-      <label class="yes"><input class="typeB typeC" name="q06" type="radio">YES
-      </label>
-      <label class="no"><input class="typeA typeD" name="q06" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q7. 緑茶より紅茶派だ</span>
-      <label class="yes"><input class="typeC typeD" name="q07" type="radio">YES
-      </label>
-      <label class="no"><input class="typeA typeB" name="q07" type="radio">NO
-      </label>
-      </li>
-      <li class="textBox">
-      <span class="text">Q8. 長風呂の方だ</span>
-      <label class="yes"><input class="typeD typeA" name="q08" type="radio">YES
-      </label>
-      <label class="no"><input class="typeC typeB" name="q08" type="radio">NO
-      </label>
-      </li>
-    </ul>
-  <button>診断する</button>
-  </div>
-  
-  <div class="result ResultA">
-    <div class="ResultA__recommend">あなたにぴったりなのは・・・・</div>
-    <div class="ResultA__Amenu">
-      <div class="ResultA__Amenu__text">フローラル系</div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h1 class="title">アロマ診断</h1>
+        <ul class="questions">
+          <li class="textBox">
+            <span class="text">Q1. 日頃の疲れが溜まっている</span>
+            <label class="yes"><input class="typeA typeD" name="q01" type="radio">YES
+            </label>
+            <label class="no"><input class="typeB typeC" name="q01" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q2. 寝付けないことが多い</span>
+            <label class="yes"><input class="typeB typeA" name="q02" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeD" name="q02" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q3. 精神的に不安定になることをしばしばだ</span>
+            <label class="yes"><input class="typeC typeD" name="q03" type="radio">YES
+            </label>
+            <label class="no"><input class="typeA typeB" name="q03" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q4. 集中力が持続しづらい</span>
+            <label class="yes"><input class="typeD typeC" name="q04" type="radio">YES
+            </label>
+            <label class="no"><input class="typeA typeB" name="q04" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q5. 運動をする習慣がある</span>
+            <label class="yes"><input class="typeA typeD" name="q05" type="radio">YES
+            </label>
+            <label class="no"><input class="typeB typeC" name="q05" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q6.人よりも香りには敏感だ </span>
+            <label class="yes"><input class="typeB typeC" name="q06" type="radio">YES
+            </label>
+            <label class="no"><input class="typeA typeD" name="q06" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q7. 緑茶より紅茶派だ</span>
+            <label class="yes"><input class="typeC typeD" name="q07" type="radio">YES
+            </label>
+            <label class="no"><input class="typeA typeB" name="q07" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q8. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q08" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q08" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q9. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q09" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q09" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q10. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q10" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q10" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q11. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q11" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q11" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q12. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q12" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q12" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q13. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q13" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q13" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q14. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q14" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q14" type="radio">NO
+            </label>
+          </li>
+          <li class="textBox">
+            <span class="text">Q15. 長風呂の方だ</span>
+            <label class="yes"><input class="typeD typeA" name="q15" type="radio">YES
+            </label>
+            <label class="no"><input class="typeC typeB" name="q15" type="radio">NO
+            </label>
+          </li>
+        </ul>
+      </div>
     </div>
-  <p>説明文</p>
-  </div>
-  <div class="result ResultB">
-    <div class="ResultB__recommend">あなたにぴったりなのは・・・・</div>
-    <div class="ResultB__Amenu">
-      <div class="ResultB__Amenu__text">ハーバル系</div>
-    </div>
-  <p>説明文</p>
-  </div>
-  <div class="result ResultC">
-    <div class="ResultC__recommend">あなたにぴったりなのは・・・・</div>
-    <div class="ResultC__Amenu">
-      <div class="ResultC__Amenu__text">ウッディ系</div>
-    </div>
-  <p>説明文</p>
-  </div>
-  <div class="result ResultD">
-    <div class="ResultD__recommend">あなたにぴったりなのは・・・・</div>
-    <div class="ResultD__Amenu">
-      <div class="ResultD__Amenu__text">シトラス</div>
-    </div>
-  <p>説明文</p>
-  </div>
 
-    </div>
+        <button class="btn btn-info">診断する</button>
+  
+      <div class="result ResultA">
+        <div class="ResultA__recommend">あなたにぴったりなのは・・・・</div>
+        <div class="ResultA__Amenu">
+          <div class="ResultA__Amenu__text">フローラル系</div>
+        </div>
+        <p>説明文</p>
+      </div>
+
+      <div class="result ResultB">
+        <div class="ResultB__recommend">あなたにぴったりなのは・・・・</div>
+        <div class="ResultB__Amenu">
+          <div class="ResultB__Amenu__text">ハーバル系</div>
+        </div>
+        <p>説明文</p>
+      </div>
+
+      <div class="result ResultC">
+        <div class="ResultC__recommend">あなたにぴったりなのは・・・・</div>
+        <div class="ResultC__Amenu">
+          <div class="ResultC__Amenu__text">ウッディ系</div>
+        </div>
+        <p>説明文</p>
+      </div>
+      
+      <div class="result ResultD">
+        <div class="ResultD__recommend">あなたにぴったりなのは・・・・</div>
+        <div class="ResultD__Amenu">
+          <div class="ResultD__Amenu__text">シトラス</div>
+        </div>
+        <p>説明文</p>
+      </div>
+
   </div>
 </body>

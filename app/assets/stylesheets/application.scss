@@ -1,8 +1,12 @@
 /* 全体 */ 
+.navbar {
+  font-family: 'Kosugi Maru', sans-serif;
+}
 
 .base-container {
   margin: 0 auto;
   padding: 1rem;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 
 /* max-width */ 
@@ -35,7 +39,6 @@ main {
 
 .aroma_index h1 {
   text-align: center;
-  font-family: 'Amatic SC', cursive;
 }
 .post_index h1 {
   text-align: center;
@@ -73,4 +76,4 @@ img.sized {
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 @import "@fortawesome/fontawesome-free/scss/regular";
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
