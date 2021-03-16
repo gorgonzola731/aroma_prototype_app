@@ -34,6 +34,7 @@ gem 'carrierwave', '~> 2.0'
 gem 'activeadmin'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'rakuten_web_service'
 
 
 group :development, :test do
