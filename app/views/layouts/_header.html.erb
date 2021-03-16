@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-prymary fixed-top" style="background-color: #FFFAF0;">
+<nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color: #FFFAF0;">
   <span class="navbar-brand"><i class="fas fa-tint"></i>
   <%= link_to "aroma life", root_path, :style=>"color:black;" %></span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,9 +9,6 @@
   
     <div class="navbar-nav">
 
-      <%= link_to "投稿一覧へ", posts_path,class: "nav-item nav-link active" %>
-      <%= link_to "アロマ図鑑", aromas_path ,class: "nav-item nav-link active"%>
-      <%= link_to "アロマ診断", diagnoses_index_path ,class: "nav-item nav-link active"%>
 
         <% if user_signed_in? %>
           <%= link_to '投稿画面へ', new_post_path ,class: "nav-item nav-link active"%>

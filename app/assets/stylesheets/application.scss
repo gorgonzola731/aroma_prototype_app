@@ -1,8 +1,18 @@
 /* 全体 */ 
+html {
+  height: 100%;
+}
+
+main {
+  background-color: #FFFAF0;
+  height: 100%; 
+    padding-top: 56px;
+
+}
 
 .base-container {
-  margin-bottom: 56px;
-  padding-bottom: 20px;
+  margin: auto;
+  padding-bottom: 75px;
   background-color: #FFFAF0;
 }
 
@@ -15,7 +25,7 @@
 }
 
 .mw-md {
-  max-width: 720px;
+  max-width: 520px;
 }
 
 .mw-lg {
@@ -23,10 +33,11 @@
 }
 
 .mw-xl {
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 body {
+  height: 100%;
   text-align: center;
   font-family: 'Kosugi Maru', sans-serif;
   line-height: 1.7;
@@ -38,7 +49,6 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  margin-top: 20px;
   }
 
 #wrapper .title {
@@ -71,10 +81,112 @@ img.sized {
 }
 
 #carouselExampleIndicators {
-  margin-top: 56px;
   padding-top: 20px;
   background-color: #FFFAF0;
 }
+
+#carouselExampleIndicators .item {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-item .item1 {
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    background: rgba(255,255,255,0.3);
+    font-size: 20px;
+    width: 45%;
+    height: 50%;
+    display: grid;
+  place-items: center;
+    color: #2f4f4f;
+}
+.carousel-item .item2 {
+  position: absolute;
+  top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    background: rgba(255,255,255,0.3);
+    font-size: 20px;
+    width: 45%;
+    height: 30%;
+    display: grid;
+  place-items: center;
+    color: #2f4f4f;
+}
+.carousel-item .item3 {
+  position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -75%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    background: rgba(255,255,255,0.3);
+    font-size: 20px;
+    width: 20%;
+    height: 90%;
+    display: grid;
+  place-items: center;
+    color: #2f4f4f;
+}
+.carousel-item .item4 {
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    background: rgba(255,255,255,0.3);
+    font-size: 20px;
+    width: 45%;
+    height: 50%;
+    display: grid;
+  place-items: center;
+    color: #2f4f4f;
+}
+
+.info_box {
+    padding: 0.2em 0.5em;
+    margin: 1em 0;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+}
+
+#wrapper .btn--circle {
+  font-weight: bold;
+  background-color: #f0e68c;
+  border-radius: 50%;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  -webkit-box-shadow: 0 5px 0 #e6d900;
+  box-shadow: 0 5px 0 #e6d900;
+}
+
+#wrapper .btn--circle:hover {
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+  -webkit-box-shadow: 0 2px 0 #e6d900;
+  box-shadow: 0 2px 0 #e6d900;
+}
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}  
 
 @import "bootstrap/scss/bootstrap";
 
