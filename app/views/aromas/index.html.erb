@@ -2,10 +2,11 @@
 <h1>アロマ図鑑</h1>
 <div class="aroma_info">
 
+
     <%= @aromas.each do |aroma| %>
       <p> 名前  <%= aroma.aroma_name %></p>  
       <% if aroma.image? %>
-      <%= image_tag aroma.image.url ,:width =>'50%',:height => '300px' %>
+      <%= image_tag aroma.image.url ,:width =>'50%',:height => '200px',:class =>"img-thumbnail" %>  
       <% end %>
       <p><%= aroma.explain %></p>
       <%= link_to "削除", aroma_path(aroma), method: :delete, data: {confirm: "削除しますか?"} %>
