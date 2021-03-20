@@ -1,9 +1,14 @@
-<h1>投稿詳細ページ</h1>
+<div class="wrapper">
+  <div class="contents-title text-center py-3">
+    <h1>everyone&apos;s aroma</h1>
+  </div>
+<div class="detail">
+
 <h3><%= @post.title %></h3>
 <h3><%= @post.content %></h3>
-<% if @post.image? %>
-      <p><%= image_tag @post.image.url %></p>
-<% end %>
+      <% if @post.image? %>
+        <%= image_tag @post.image.url %>
+      <% end %>
 
 <h3>いいね件数: <%= @post.likes.count %></h3>
 <% if current_user.already_liked?(@post) %>
@@ -39,3 +44,23 @@
   </tbody>
 </table>
 <%= link_to "ホームへ戻る", posts_path %>
+</div>
+</div>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>nickname</th>
+      <th>title</th>
+      <th>content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <%= 
+      <th scope="row">kensuke</th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+  </tbody>
+</table>
