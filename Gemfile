@@ -35,6 +35,7 @@ gem 'activeadmin'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'rakuten_web_service'
+gem 'kaminari'
 
 
 group :development do
