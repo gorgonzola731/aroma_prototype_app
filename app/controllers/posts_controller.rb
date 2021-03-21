@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: :index
 
-  PER_PAGE = 9
+  PER_PAGE = 6
 
   def index
     @posts = Post.all.order(id: :asc).page(params[:page]).per(PER_PAGE)

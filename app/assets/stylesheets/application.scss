@@ -203,6 +203,12 @@ img.sized {
 .fa-heart {
   color: #FFABCE;
 }
+
+/* ページネーションの設定 */
+.pagination {
+  justify-content: center;
+} 
+
 @import "bootstrap/scss/bootstrap";
 
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
