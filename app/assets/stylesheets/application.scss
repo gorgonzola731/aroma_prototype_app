@@ -197,6 +197,18 @@ img.sized {
   height: 200px;
 }
 
+.likecount {
+  font-size: 30px;
+}
+.fa-heart {
+  color: #FFABCE;
+}
+
+/* ページネーションの設定 */
+.pagination {
+  justify-content: center;
+} 
+
 @import "bootstrap/scss/bootstrap";
 
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
