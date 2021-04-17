@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order(id: :asc).page(params[:page]).per(PER_PAGE)
+    @post = Post.new
   end
 
   def show
@@ -20,6 +21,7 @@ class PostsController < ApplicationController
 
   def create
     current_user.posts.create!(post_params)
+    @posts = Post.all.order(id: :asc).page(params[:page]).per(PER_PAGE)
   end
 
   def edit
