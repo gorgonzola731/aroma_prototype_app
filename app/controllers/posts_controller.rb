@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: :index
 
-  PER_PAGE = 6
+  PER_PAGE = 15
 
   def index
-    @posts = Post.all.order(id: :asc).page(params[:page]).per(PER_PAGE)
+    @posts = Post.all.order(created_at: :desc).page(params[:page]).per(PER_PAGE)
     @post = Post.new
   end
 
@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
   def create
     current_user.posts.create!(post_params)
-    @posts = Post.all.order(id: :asc).page(params[:page]).per(PER_PAGE)
+    @posts = Post.order(created_at: :desc).page(params[:page]).per(PER_PAGE)
   end
 
   def edit

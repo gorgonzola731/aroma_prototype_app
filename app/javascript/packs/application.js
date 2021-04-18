@@ -6,9 +6,10 @@ import "channels"
 
 Rails.start()
 Turbolinks.start()
+window.$ = $  
 ActiveStorage.start()
 import "bootstrap/dist/js/bootstrap"
-require("../stylesheets/application.scss")
+require("../../assets/stylesheets/application.scss")
 import "@fortawesome/fontawesome-free/js/all"
 import './diagnoses'
 
